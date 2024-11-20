@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+  telegram_bot:
+    build: ./telegram_bot
+    depends_on:
+      - backend
